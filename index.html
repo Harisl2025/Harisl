@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة تسويق رقمية لشركة KeyBab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c09a5b;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #eab308;
+        }
+        /* Animation classes */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .active-nav {
+            color: #eab308;
+            border-bottom: 2px solid #eab308;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #4a5568;
+            border: 3px solid #c09a5b;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 transition-all duration-300 shadow-lg shadow-black/20">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-white">
+                    <span class="text-[#c09a5b]">Key</span>Bab
+                </div>
+                <nav class="hidden md:flex space-x-reverse space-x-6 items-center">
+                    <a href="#introduction" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">المقدمة</a>
+                    <a href="#analysis" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">التحليل</a>
+                    <a href="#strategy" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">الاستراتيجية</a>
+                    <a href="#plan" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">الخطة</a>
+                    <a href="#timeline" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">التنفيذ</a>
+                    <a href="#contact" class="nav-link text-gray-300 hover:text-[#c09a5b] transition duration-300 pb-1">الخطوة التالية</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#introduction" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">المقدمة</a>
+            <a href="#analysis" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">التحليل</a>
+            <a href="#strategy" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">الاستراتيجية</a>
+            <a href="#plan" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">الخطة</a>
+            <a href="#timeline" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">التنفيذ</a>
+            <a href="#contact" class="block py-2 px-6 text-sm text-gray-200 hover:bg-gray-800">الخطوة التالية</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Slide 1: Cover -->
+        <section id="cover" class="h-screen bg-cover bg-center flex items-center justify-center text-center text-white" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://placehold.co/1920x1080/1a1a1a/c09a5b?text=KeyBab');">
+            <div class="animate-content">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">خطة استراتيجية لتعزيز الحضور الرقمي<br/> وزيادة المبيعات لعلامة <span class="text-[#c09a5b]">KeyBab</span> التجارية</h1>
+                <p class="text-lg md:text-2xl text-gray-300 mb-2">نظرة تحليلية للوضع الحالي وفرص النمو في السوق السعودي</p>
+                <p class="text-sm text-gray-400">إعداد: حسن الشافعي – مدير تسويق رقمي | يونيو 2025</p>
+            </div>
+        </section>
+
+        <!-- Slide 2: Introduction -->
+        <section id="introduction" class="py-20 bg-gray-900 section-marker">
+            <div class="container mx-auto px-6 text-center">
+                <div class="animate-content">
+                    <h2 class="text-4xl font-bold mb-6">مقدمة: <span class="text-[#c09a5b]">لماذا الآن؟</span></h2>
+                    <p class="max-w-4xl mx-auto text-xl text-gray-300 leading-relaxed mb-10">في ظل التنافس المتزايد في قطاع الأبواب والنوافذ (WPC) بالمملكة، لم يعد التواجد الرقمي مجرد خيار، بل أصبح **المحرك الأساسي لبناء الثقة، جذب العملاء، وتحقيق المبيعات.**</p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-3">تقييم الأداء</h3>
+                            <p class="text-gray-400">تقييم الأداء الرقمي الحالي لـ KeyBab على كافة المنصات.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-3">تحديد الفرص</h3>
+                            <p class="text-gray-400">تحديد نقاط القوة الكامنة والفرص غير المستغلة.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-3">كشف نقاط الضعف</h3>
+                            <p class="text-gray-400">كشف نقاط الضعف ووضع خطط عملية لتحسينها.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-3">اقتراح استراتيجية</h3>
+                            <p class="text-gray-400">اقتراح استراتيجية تسويق ومحتوى متكاملة لمدة 3 أشهر، قابلة للتنفيذ والقياس.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Slide 3: About KeyBab's Strength -->
+        <section id="about" class="py-20 bg-gray-800 section-marker">
+            <div class="container mx-auto px-6">
+                <div class="animate-content text-center">
+                    <h2 class="text-4xl font-bold mb-4">قوة <span class="text-[#c09a5b]">KeyBab</span>: ليست مجرد أبواب</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-12">هي حلول متكاملة تقدمها شركة **إمارا بالاس** للمقاولات، تجمع بين الجودة السعودية والتصميم العصري. هذه هي نقاط التميز التي سنبني عليها استراتيجيتنا:</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 animate-content">
+                    <div class="bg-gray-900 rounded-xl p-8 text-center border border-gray-700 hover:border-[#c09a5b] transition-all duration-300">
+                        <div class="text-5xl text-[#c09a5b] mb-4">🔧</div>
+                        <h3 class="text-2xl font-bold mb-2">تفصيل دقيق حسب المقاس</h3>
+                        <p class="text-gray-400">"باب بيتك بمقاسك.. مش جاهز!"</p>
+                    </div>
+                    <div class="bg-gray-900 rounded-xl p-8 text-center border border-gray-700 hover:border-[#c09a5b] transition-all duration-300">
+                        <div class="text-5xl text-[#c09a5b] mb-4">🛡️</div>
+                        <h3 class="text-2xl font-bold mb-2">ضمان هو الأقوى</h3>
+                        <p class="text-gray-400">15 سنة على الأبواب و 5 سنوات على الإكسسوارات.</p>
+                    </div>
+                    <div class="bg-gray-900 rounded-xl p-8 text-center border border-gray-700 hover:border-[#c09a5b] transition-all duration-300">
+                        <div class="text-5xl text-[#c09a5b] mb-4">🏭</div>
+                        <h3 class="text-2xl font-bold mb-2">منتج أصلي 100%</h3>
+                        <p class="text-gray-400">إكسسوارات من المصدر، وليس تجميعاً.</p>
+                    </div>
+                     <div class="bg-gray-900 rounded-xl p-8 text-center border border-gray-700 hover:border-[#c09a5b] transition-all duration-300 md:col-span-2 lg:col-span-1">
+                        <div class="text-5xl text-[#c09a5b] mb-4">💧</div>
+                        <h3 class="text-2xl font-bold mb-2">جودة استثنائية</h3>
+                        <p class="text-gray-400">مقاومة كاملة للماء، الحريق، الصدمات، والحشرات.</p>
+                    </div>
+                     <div class="bg-gray-900 rounded-xl p-8 text-center border border-gray-700 hover:border-[#c09a5b] transition-all duration-300 col-span-1 md:col-span-2 lg:col-span-2">
+                        <div class="text-5xl text-[#c09a5b] mb-4">📍</div>
+                        <h3 class="text-2xl font-bold mb-2">تغطية جغرافية استراتيجية</h3>
+                        <p class="text-gray-400">حفر الباطن، تبوك، خميس مشيط. مع خطط توسع رقمي للرياض، جدة، والدمام.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analysis Sections Combined -->
+        <section id="analysis" class="py-20 bg-gray-900 section-marker">
+            <div class="container mx-auto px-6">
+                <!-- Slide 4: Target Audience -->
+                <div class="animate-content mb-20">
+                    <h2 class="text-4xl font-bold text-center mb-12">الجمهور المستهدف: <span class="text-[#c09a5b]">لمن نتحدث؟</span></h2>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="bg-gray-800 p-8 rounded-lg border-l-4 border-[#c09a5b]">
+                            <h3 class="text-3xl font-bold mb-4">🎯 B2C (الأفراد)</h3>
+                            <p class="text-gray-300 mb-4">رجال ونساء (28-55 سنة) يقومون ببناء أو تجديد منازلهم. يبحثون عن **الجودة، الضمان، والشكل الأنيق**. يثقون في التجارب الحقيقية والفيديوهات العملية.</p>
+                            <div class="flex space-x-4 space-x-reverse text-sm">
+                                <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">Instagram</span>
+                                <span class="bg-red-900/50 text-red-300 px-3 py-1 rounded-full">TikTok</span>
+                                <span class="bg-sky-900/50 text-sky-300 px-3 py-1 rounded-full">Facebook</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg border-l-4 border-teal-500">
+                            <h3 class="text-3xl font-bold mb-4">🧑‍💼 B2B (المشاريع)</h3>
+                            <p class="text-gray-300 mb-4">مقاولون، مهندسون، ومصممون داخليون. يبحثون عن **الالتزام، المواصفات الفنية الواضحة، وسهولة التواصل**. يفضلون المحتوى التقني والموجز.</p>
+                             <div class="flex space-x-4 space-x-reverse text-sm">
+                                <span class="bg-sky-900/50 text-sky-300 px-3 py-1 rounded-full">Twitter</span>
+                                <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full">LinkedIn</span>
+                                <span class="bg-green-900/50 text-green-300 px-3 py-1 rounded-full">WhatsApp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5: Digital Audit -->
+                <div class="animate-content mb-20">
+                    <h2 class="text-4xl font-bold text-center mb-12">تحليل التواجد الرقمي: <span class="text-[#c09a5b]">أين نحن الآن؟</span></h2>
+                     <p class="text-center text-gray-400 max-w-2xl mx-auto mb-8">الحضور الرقمي الحالي يعمل **ككتالوج رقمي**، وليس **كأداة فعالة لجذب العملاء وتحقيق المبيعات.**</p>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Website Card -->
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">الموقع الإلكتروني</h4>
+                            <p class="text-green-400 mb-2 flex items-center"><span class="w-4 h-4 rounded-full bg-green-500 ml-2"></span>تصميم بسيط وزر واتساب</p>
+                            <p class="text-red-400 mb-1 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>غياب الهوية ونقص الروابط</p>
+                            <p class="text-red-400 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>لا يوجد CTA واضح و SEO ضعيف</p>
+                        </div>
+                        <!-- Instagram Card -->
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">Instagram</h4>
+                            <p class="text-green-400 mb-2 flex items-center"><span class="w-4 h-4 rounded-full bg-green-500 ml-2"></span>هوية بصرية مقبولة وصور واضحة</p>
+                            <p class="text-red-400 mb-1 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>تفاعل ضعيف جداً</p>
+                            <p class="text-red-400 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>غياب محتوى الفيديو والعنصر البشري</p>
+                        </div>
+                        <!-- TikTok Card -->
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">TikTok</h4>
+                            <p class="text-green-400 mb-2 flex items-center"><span class="w-4 h-4 rounded-full bg-green-500 ml-2"></span>الاسم موحد ومحتوى فيديو جيد</p>
+                            <p class="text-red-400 mb-1 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>غير منظم وفيديوهات أفقية</p>
+                            <p class="text-red-400 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>غياب الهوية البصرية و CTA</p>
+                        </div>
+                        <!-- Twitter Card -->
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <h4 class="text-xl font-bold mb-4">Twitter</h4>
+                            <p class="text-green-400 mb-2 flex items-center"><span class="w-4 h-4 rounded-full bg-green-500 ml-2"></span>نشاط قديم ومعلومات تقنية</p>
+                            <p class="text-red-400 mb-1 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>محتوى إعلاني بحت وتفاعل منخفض</p>
+                            <p class="text-red-400 flex items-start"><span class="w-4 h-4 rounded-full bg-red-500 ml-2 mt-1 shrink-0"></span>وتيرة نشر بطيئة جداً</p>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Slide 6: Weaknesses & Opportunities -->
+                <div class="animate-content mb-20">
+                    <h2 class="text-4xl font-bold text-center mb-12">نقاط الضعف: <span class="text-[#c09a5b]">فرصتنا الكبرى للنمو</span></h2>
+                    <div class="space-y-6">
+                        <div class="bg-gray-800 rounded-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+                            <div><h4 class="text-2xl font-bold text-red-400">🎨 هوية بصرية غير متماسكة</h4></div>
+                            <div><p class="text-lg text-gray-300">**الحل:** تصميم هوية بصرية موحدة (ألوان، خطوط، قوالب) تُطبق على جميع المنصات لخلق انطباع احترافي لا يُنسى.</p></div>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+                             <div><h4 class="text-2xl font-bold text-red-400">📉 تفاعل منخفض ومحتوى غير جذاب</h4></div>
+                            <div><p class="text-lg text-gray-300">**الحل:** الانتقال من المحتوى الثابت إلى **الفيديوهات القصيرة (Reels/TikTok)**، وإظهار العنصر البشري (فنيين، عملاء) لبناء الثقة والتواصل.</p></div>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+                            <div><h4 class="text-2xl font-bold text-red-400">❓ غياب دعوة واضحة لاتخاذ إجراء</h4></div>
+                            <div><p class="text-lg text-gray-300">**الحل:** إضافة CTA واضح في كل منشور وفيديو: "اطلب عرض سعر"، "تواصل واتساب"، "احجز مقاساتك" لتحويل المشاهدين إلى عملاء.</p></div>
+                        </div>
+                        <div class="bg-gray-800 rounded-lg p-6 grid md:grid-cols-2 gap-6 items-center">
+                             <div><h4 class="text-2xl font-bold text-red-400">🎯 غياب الحملات الإعلانية الموجهة</h4></div>
+                            <div><p class="text-lg text-gray-300">**الحل:** إطلاق حملات إعلانية مدفوعة على Instagram و TikTok لاستهداف الجمهور المحدد بدقة والوصول إلى عملاء جدد بفعالية.</p></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 7: Competitor Analysis -->
+                <div class="animate-content">
+                    <h2 class="text-4xl font-bold text-center mb-12">تحليل المنافسين: <span class="text-[#c09a5b]">كيف نتفوق؟</span></h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                            <h4 class="text-2xl font-bold mb-3">الغملاس</h4>
+                            <p class="text-gray-400 mb-4">هوية قوية، مسابقات، أسلوب جذاب.</p>
+                            <hr class="border-gray-700 my-4">
+                            <h5 class="text-lg font-bold text-[#c09a5b] mb-2">تفوق KeyBab</h5>
+                            <p class="text-gray-300">**بجودة المنتج والضمان الأطول (15 سنة).** رسالتنا ستركز على الثقة والاستثمار طويل الأمد.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg text-center border-2 border-[#c09a5b] shadow-2xl shadow-[#c09a5b]/20">
+                             <h4 class="text-2xl font-bold mb-3">Eco Doors</h4>
+                            <p class="text-gray-400 mb-4">تركيز على الاستدامة، ألوان هادئة.</p>
+                            <hr class="border-gray-700 my-4">
+                            <h5 class="text-lg font-bold text-[#c09a5b] mb-2">تفوق KeyBab</h5>
+                            <p class="text-gray-300">**بالتفصيل حسب المقاس والتركيب الاحترافي.** نحن نقدم حلاً مخصصاً وليس منتجاً قياسياً.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 rounded-lg text-center">
+                             <h4 class="text-2xl font-bold mb-3">Premier Doors</h4>
+                            <p class="text-gray-400 mb-4">موقع احترافي، عرض جيد للمنتجات.</p>
+                            <hr class="border-gray-700 my-4">
+                            <h5 class="text-lg font-bold text-[#c09a5b] mb-2">تفوق KeyBab</h5>
+                            <p class="text-gray-300">**بالصناعة السعودية الكاملة (غير مجمّع)**، مما يضمن جودة الإكسسوارات والتوافق.</p>
+                        </div>
+                    </div>
+                     <p class="text-center text-xl mt-10 font-semibold">قوتنا الحقيقية تكمن في المنتج نفسه، ودورنا هو إيصال هذه القوة للجمهور.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Sections -->
+        <section id="strategy" class="py-20 bg-gray-800 section-marker">
+            <div class="container mx-auto px-6">
+                <!-- Slide 8: Marketing Strategy -->
+                 <div class="animate-content text-center mb-20">
+                    <h2 class="text-4xl font-bold mb-4">استراتيجية التسويق الرقمي المقترحة</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-12">**رؤيتنا:** تحويل الحضور الرقمي لـ KeyBab من مجرد واجهة عرض إلى **آلة لتوليد العملاء المحتملين (Lead Generation Machine).** سنقوم بذلك عبر 3 محاور رئيسية:</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 animate-content">
+                    <div class="bg-gray-900 p-8 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-[#c09a5b] mb-4">1. بناء الثقة (Build Trust)</h3>
+                        <p class="text-gray-400 mb-4">**المحتوى:** فيديوهات "قبل وبعد"، شهادات عملاء، إظهار مراحل التصنيع، وشرح تفاصيل الضمان.</p>
+                        <p class="font-semibold text-lg bg-gray-800 p-3 rounded">**الرسالة:** "الجودة التي يمكنك رؤيتها ولمسها."</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-[#c09a5b] mb-4">2. خلق الرغبة (Create Desire)</h3>
+                        <p class="text-gray-400 mb-4">**المحتوى:** عرض التصاميم العصرية، الألوان المتعددة، وكيف تضفي أبواب KeyBab لمسة جمالية على المنازل.</p>
+                        <p class="font-semibold text-lg bg-gray-800 p-3 rounded">**الرسالة:** "الباب الذي يكمل أناقة منزلك."</p>
+                    </div>
+                    <div class="bg-gray-900 p-8 rounded-lg text-center">
+                        <h3 class="text-2xl font-bold text-[#c09a5b] mb-4">3. تسهيل القرار (Drive Action)</h3>
+                        <p class="text-gray-400 mb-4">**الأدوات:** حملات إعلانية موجهة للرسائل (WhatsApp)، عروض حصرية، CTA واضحة، وتحسين الموقع الإلكتروني.</p>
+                        <p class="font-semibold text-lg bg-gray-800 p-3 rounded">**الرسالة:** "احصل على بابك المثالي اليوم."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plan Sections -->
+        <section id="plan" class="py-20 bg-gray-900 section-marker">
+            <div class="container mx-auto px-6">
+                 <!-- Slide 9: Creative Content Plan -->
+                 <div class="animate-content mb-20">
+                    <h2 class="text-4xl font-bold text-center mb-4">خطة المحتوى الإبداعي</h2>
+                    <p class="text-center text-2xl font-semibold text-[#c09a5b] mb-12">"KeyBab: بابك على كيفك.. وجودة تطمنك"</p>
+                    <div class="grid md:grid-cols-2 gap-10">
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="text-3xl font-bold mb-6 text-center">Instagram / Facebook</h3>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="flex items-start"><span class="text-[#c09a5b] text-2xl ml-3">◆</span><div><strong class="font-bold">Reels (3-4 أسبوعياً):</strong> فيديوهات تركيب سريعة (Before/After)، اختبارات متانة (مقاومة الماء/الخدش)، جولات في المعرض.</div></li>
+                                <li class="flex items-start"><span class="text-[#c09a5b] text-2xl ml-3">◆</span><div><strong class="font-bold">Carousels (2 أسبوعياً):</strong> عرض الألوان والموديلات، مقارنات ذكية (KeyBab ضد الأبواب التقليدية)، شرح تفاصيل الضمان.</div></li>
+                                <li class="flex items-start"><span class="text-[#c09a5b] text-2xl ml-3">◆</span><div><strong class="font-bold">Stories (يومياً):</strong> كواليس، استفتاءات، أسئلة وأجوبة، عروض سريعة.</div></li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-gray-700 text-center">
+                                <p class="text-lg font-bold text-gray-200">"ضمان 15 سنة مش كلام!"</p>
+                                <p class="text-lg font-bold text-gray-200">"عيش راحة البال.. بدون صيانة"</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                             <h3 class="text-3xl font-bold mb-6 text-center">TikTok</h3>
+                            <ul class="space-y-4 text-gray-300">
+                                <li class="flex items-start"><span class="text-[#c09a5b] text-2xl ml-3">◆</span><div><strong class="font-bold">فيديوهات قصيرة (4-5 أسبوعياً):</strong> فيديوهات مرضية (Satisfying) للتركيب، تحديات (مثل سكب الماء على الباب)، تريندات متعلقة بالبناء والتشطيب، نصائح سريعة من الفنيين.</div></li>
+                            </ul>
+                             <div class="mt-6 pt-4 border-t border-gray-700 text-center">
+                                <p class="text-lg font-bold text-gray-200">"باب بيتك بمقاسك.. مش جاهز!"</p>
+                                <p class="text-lg font-bold text-gray-200">"منتجك من المصدر الأصلي"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 10 & 11: Goals and KPIs -->
+                <div class="animate-content">
+                    <h2 class="text-4xl font-bold text-center mb-12">الأهداف، النتائج، ومؤشرات النجاح</h2>
+                    <div class="grid lg:grid-cols-2 gap-12 items-start">
+                        <!-- Goals -->
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-center text-[#c09a5b]">الأهداف والنتائج المتوقعة (3 شهور)</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="font-bold text-lg">الشهر الأول: التأسيس وبناء الوعي</h4>
+                                    <p class="text-sm text-gray-400">تطوير الهوية، إطلاق حملات وعي، تنشيط الحسابات.</p>
+                                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                        <div class="bg-[#c09a5b] h-2.5 rounded-full" style="width: 20%"></div>
+                                    </div>
+                                    <p class="text-right text-xs mt-1">النتيجة المتوقعة: زيادة الوصول والمتابعين بنسبة 20%</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg">الشهر الثاني: التفاعل وتوليد العملاء</h4>
+                                    <p class="text-sm text-gray-400">زيادة التفاعل، إطلاق حملات رسائل، جمع شهادات.</p>
+                                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                        <div class="bg-[#c09a5b] h-2.5 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                    <p class="text-right text-xs mt-1">النتيجة المتوقعة: استقبال 50-70 استفساراً جديداً</p>
+                                </div>
+                                 <div>
+                                    <h4 class="font-bold text-lg">الشهر الثالث: التحسين والتوسع</h4>
+                                    <p class="text-sm text-gray-400">تحليل الأداء، التوسع، إعادة الاستهداف.</p>
+                                    <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                        <div class="bg-[#c09a5b] h-2.5 rounded-full" style="width: 100%"></div>
+                                    </div>
+                                    <p class="text-right text-xs mt-1">النتيجة المتوقعة: تحقيق 25% زيادة إجمالية</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- KPIs -->
+                        <div class="bg-gray-800 p-8 rounded-lg">
+                            <h3 class="text-2xl font-bold mb-6 text-center text-[#c09a5b]">كيف سنقيس النجاح؟ (KPIs)</h3>
+                            <ul class="space-y-3 text-lg">
+                                <li class="flex items-center">📈 <strong class="mx-2">الوصول (Reach):</strong> عدد الأشخاص الذين شاهدوا إعلاناتنا.</li>
+                                <li class="flex items-center">💬 <strong class="mx-2">التفاعل (Engagement):</strong> اللايكات، التعليقات، والمشاركات.</li>
+                                <li class="flex items-center">📩 <strong class="mx-2">العملاء المحتملون (Leads):</strong> عدد رسائل الواتساب والاستفسارات الجديدة.</li>
+                                <li class="flex items-center">📞 <strong class="mx-2">التحويلات (Conversions):</strong> عدد طلبات القياس أو البيع التي تمت.</li>
+                                <li class="flex items-center">💰 <strong class="mx-2">التكلفة لكل عميل (CPL):</strong> قياس كفاءة الإنفاق الإعلاني.</li>
+                            </ul>
+                            <div class="mt-6 pt-4 border-t border-gray-700">
+                                <h4 class="font-bold text-xl mb-3">توصيات نهائية</h4>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>توحيد الهوية البصرية فوراً على جميع المنصات.</li>
+                                    <li>الاستثمار في تصوير فيديو احترافي كأولوية قصوى.</li>
+                                    <li>تخصيص موظف للرد السريع على استفسارات وسائل التواصل.</li>
+                                    <li>تطوير الموقع الإلكتروني ليشمل CTA واضح وصفحات تفصيلية.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Slide 12: Timeline -->
+        <section id="timeline" class="py-20 bg-gray-800 section-marker">
+            <div class="container mx-auto px-6">
+                <div class="animate-content text-center">
+                    <h2 class="text-4xl font-bold mb-4">مراحل تنفيذ الحملة الرقمية</h2>
+                    <p class="max-w-3xl mx-auto text-lg text-gray-300 mb-12">خطة عمل مفصلة ومقسمة على مدار 3 أشهر لضمان تحقيق أفضل النتائج.</p>
+                </div>
+                <div class="relative animate-content">
+                    <!-- The vertical line -->
+                    <div class="hidden md:block absolute right-1/2 top-0 h-full w-0.5 bg-gray-700 transform -translate-x-1/2"></div>
+
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item mb-16 flex md:justify-end md:pr-10">
+                        <div class="w-full md:w-5/12 bg-gray-900 p-6 rounded-lg shadow-xl border-r-4 border-[#c09a5b]">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-2">المرحلة 1: التحضير (الأسبوع 1)</h3>
+                            <h4 class="font-semibold mb-3">الهدف: تجهيز البنية الفنية والبصرية للانطلاق.</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>مراجعة وتحسين صفحات التواصل (Bio، روابط، CTA).</li>
+                                <li>إعداد مكتبة المحتوى الأساسي (صور، فيديوهات).</li>
+                                <li>تحديد الجمهور بدقة وإنشاء Custom Audiences.</li>
+                                <li>تجهيز المحتوى الإعلاني للمرحلة الأولى.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Timeline Item 2 -->
+                     <div class="timeline-item mb-16 flex md:justify-start md:pl-10">
+                        <div class="w-full md:w-5/12 bg-gray-900 p-6 rounded-lg shadow-xl border-l-4 border-[#c09a5b]">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-2">المرحلة 2: الإطلاق والاختبار (الأسابيع 2-4)</h3>
+                            <h4 class="font-semibold mb-3">الهدف: إطلاق الإعلانات التجريبية وتحليل النتائج.</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>إطلاق حملة Awareness على Meta و TikTok.</li>
+                                <li>اختبار إعلانات Conversion مع A/B Testing.</li>
+                                <li>تحليل الأداء يوميًا وتحديد الإعلانات الأفضل.</li>
+                                <li>نشر محتوى عضوي يومي لتعزيز التفاعل.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item mb-16 flex md:justify-end md:pr-10">
+                        <div class="w-full md:w-5/12 bg-gray-900 p-6 rounded-lg shadow-xl border-r-4 border-[#c09a5b]">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-2">المرحلة 3: التوسع والتخصيص (الشهر 2)</h3>
+                            <h4 class="font-semibold mb-3">الهدف: تكثيف الحملات الناجحة وتوجيهها لجمهور أوسع.</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>زيادة الميزانية على الإعلانات الناجحة.</li>
+                                <li>بدء حملات B2B موجهة للمقاولين وشركات المشاريع.</li>
+                                <li>الترويج لعروض مخصصة (خصومات، هدايا، ضمان ممتد).</li>
+                                <li>التعاون مع مؤثرين محليين في مجال البناء والديكور.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4 -->
+                    <div class="timeline-item flex md:justify-start md:pl-10">
+                        <div class="w-full md:w-5/12 bg-gray-900 p-6 rounded-lg shadow-xl border-l-4 border-[#c09a5b]">
+                            <h3 class="text-2xl font-bold text-[#c09a5b] mb-2">المرحلة 4: التكرار والتطوير (الشهر 3)</h3>
+                            <h4 class="font-semibold mb-3">الهدف: الحفاظ على الزخم وتهيئة الأرض للمرحلة التالية.</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                <li>إعادة استهداف المهتمين (Retargeting & Lookalike).</li>
+                                <li>نشر شهادات عملاء وتجارب حقيقية.</li>
+                                <li>إعداد فيديوهات مقارنة وتوثيق جودة المنتج.</li>
+                                <li>إطلاق حملة ختامية قوية (حملة نهاية ربع السنة).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-content text-center mt-16 bg-gray-900/50 p-6 rounded-lg max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-[#c09a5b] mb-3">🔁 استراتيجية المتابعة المستمرة</h3>
+                    <p class="text-lg text-gray-300">مراجعة أسبوعية لمؤشرات الأداء (KPIs)، تعديل الخطة حسب النتائج (Dynamic Optimization)، وتقديم تقارير نصف شهرية للعميل عن النتائج والتوصيات لضمان الشفافية والوصول للأهداف.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 13: Next Steps -->
+        <section id="contact" class="py-20 bg-gray-900 section-marker">
+            <div class="container mx-auto px-6 text-center">
+                 <div class="animate-content">
+                    <h2 class="text-4xl font-bold mb-4">الخطوة التالية: <span class="text-[#c09a5b]">لننطلق!</span></h2>
+                    <p class="max-w-3xl mx-auto text-xl text-gray-300 mb-10">نحن جاهزون لتحويل KeyBab إلى العلامة التجارية الرائدة في سوق الأبواب والنوافذ في المملكة.</p>
+                    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                        <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-5xl mb-3">1</p>
+                            <h3 class="text-xl font-bold">الموافقة على الخطة</h3>
+                            <p class="text-gray-400 text-sm">الموافقة على الخطة الاستراتيجية المقترحة.</p>
+                        </div>
+                         <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-5xl mb-3">2</p>
+                            <h3 class="text-xl font-bold">مناقشة التفاصيل</h3>
+                            <p class="text-gray-400 text-sm">مناقشة الميزانية الإعلانية وتفاصيل التعاقد.</p>
+                        </div>
+                         <div class="bg-gray-800 p-6 rounded-lg">
+                            <p class="text-5xl mb-3">3</p>
+                            <h3 class="text-xl font-bold">بدء التنفيذ</h3>
+                            <p class="text-gray-400 text-sm">البدء الفوري في مرحلة التأسيس والتنفيذ.</p>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <p class="text-lg text-gray-200">شكراً لوقتكم، ونتطلع لبدء هذه الشراكة الناجحة.</p>
+                        <p class="text-2xl font-bold mt-2">حسن الشافعي</p>
+                        <p class="text-gray-400">[رقم الهاتف]</p>
+                        <p class="text-gray-400">[البريد الإلكتروني]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Animation on Scroll
+        const animatedElements = document.querySelectorAll('.animate-content');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Find all elements within the intersecting section to animate
+                    const elementsToAnimate = entry.target.querySelectorAll('.fade-in-up, .animate-content');
+                     elementsToAnimate.forEach(el => el.classList.add('is-visible'));
+                    entry.target.classList.add('is-visible');
+                    // Optional: unobserve after animation to save resources
+                    // observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1 // Triggers when 10% of the element is visible
+        });
+
+        document.querySelectorAll('.section-marker, #cover').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Active Nav Link on Scroll
+        const sections = document.querySelectorAll('.section-marker');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const options = {
+            rootMargin: "-50% 0px -50% 0px" // Trigger in the middle of the viewport
+        };
+
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(link => {
+                        link.classList.remove('active-nav');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active-nav');
+                        }
+                    });
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+    </script>
+</body>
+</html>
