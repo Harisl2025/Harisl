@@ -43,15 +43,15 @@
             border-bottom: 2px solid #eab308;
         }
         /* Tab Styles */
-        .tab-button.active, .sub-tab-button.active {
+        .tab-button.active, .sub-tab-button.active, .budget-tab-button.active, .timeline-tab-button.active {
             background-color: #c09a5b;
             color: #1a202c;
             box-shadow: 0 4px 14px 0 rgba(192, 154, 91, 0.39);
         }
-        .tab-pane, .sub-tab-pane {
+        .tab-pane, .sub-tab-pane, .budget-tab-pane, .timeline-tab-pane {
             display: none;
         }
-        .tab-pane.active, .sub-tab-pane.active {
+        .tab-pane.active, .sub-tab-pane.active, .budget-tab-pane.active, .timeline-tab-pane.active {
             display: block;
             animation: fadeIn 0.5s ease-in-out;
         }
@@ -429,92 +429,82 @@
                                 <button data-budget-tab="month2" class="budget-tab-button flex-1 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 bg-gray-700/50 hover:bg-[#c09a5b] hover:text-gray-900">الشهر الثاني</button>
                                 <button data-budget-tab="month3" class="budget-tab-button flex-1 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 bg-gray-700/50 hover:bg-[#c09a5b] hover:text-gray-900">الشهر الثالث</button>
                             </div>
-        <!-- Budget Content -->
-                            <div>
+                            <!-- Budget Content -->
+                            <div class="bg-gray-800 p-6 rounded-lg min-h-[300px]">
                                 <div id="month1-pane" class="budget-tab-pane active">
                                     <div class="text-center mb-8">
                                         <p class="text-2xl font-bold">الشهر الأول: <span class="text-green-400">3000 ريال</span></p>
-                                        <p class="text-lg text-gray-400">🎯 الهدف: جذب أولي + وعي + محادثات واتساب</p>
+                                        <p class="text-lg text-gray-400">🎯 الهدف: تأسيس جمهور + تدريب الخوارزميات</p>
                                     </div>
-                                    <div class="grid md:grid-cols-3 gap-6 text-center">
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                    <div class="grid md:grid-cols-2 gap-6 text-center justify-center">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">Meta Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1500 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 50%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1000 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 33.33%"></div></div>
                                             <p class="text-gray-400 text-sm">جذب الزوار + رسائل واتساب</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">TikTok Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1200 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 40%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">2000 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 66.67%"></div></div>
                                             <p class="text-gray-400 text-sm">فيديوهات ريلز لجذب الانتباه</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
-                                            <h4 class="text-xl font-bold">Retargeting</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">300 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 10%"></div></div>
-                                            <p class="text-gray-400 text-sm">إعادة استهداف المهتمين</p>
-                                        </div>
                                     </div>
-                                    <div class="mt-8 bg-gray-800/50 p-4 rounded-md text-center"><strong class="text-[#c09a5b]">التوزيع الزمني:</strong> الأسبوع 1 (Awareness), الأسبوع 2 (Engagement), الأسبوع 3 (Conversion), الأسبوع 4 (Retargeting).</div>
                                 </div>
                                 <div id="month2-pane" class="budget-tab-pane">
                                     <div class="text-center mb-8">
-                                        <p class="text-2xl font-bold">الشهر الثاني (مقترح): <span class="text-green-400">4000 ريال</span></p>
-                                        <p class="text-lg text-gray-400">🎯 الهدف: توسيع الوصول + زيادة رسائل + تأهيل عملاء B2B</p>
+                                        <p class="text-2xl font-bold">الشهر الثاني (مقترح): <span class="text-green-400">5000 ريال</span></p>
+                                        <p class="text-lg text-gray-400">🎯 الهدف: طلبات أولية + ثقة رقمية</p>
                                     </div>
                                     <div class="grid md:grid-cols-3 gap-6 text-center">
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">Meta Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1800 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 45%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1500 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 30%"></div></div>
                                             <p class="text-gray-400 text-sm">حملات رسائل و Conversion</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">TikTok Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1600 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 40%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">3000 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 60%"></div></div>
                                             <p class="text-gray-400 text-sm">زيادة الوصول وجذب عملاء جدد</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
-                                            <h4 class="text-xl font-bold">LinkedIn / Retargeting</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">600 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 15%"></div></div>
-                                            <p class="text-gray-400 text-sm">استهداف B2B وإعادة استهداف</p>
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
+                                            <h4 class="text-xl font-bold">Retargeting</h4>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">500 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 10%"></div></div>
+                                            <p class="text-gray-400 text-sm">إعادة استهداف B2B</p>
                                         </div>
                                     </div>
-                                    <div class="mt-8 bg-gray-800/50 p-4 rounded-md text-center"><strong class="text-[#c09a5b]">إضافة عناصر:</strong> محتوى مخصص للمقاولين، نشر شهادات عملاء، استهداف بالجمهور المشابه.</div>
                                 </div>
                                 <div id="month3-pane" class="budget-tab-pane">
                                     <div class="text-center mb-8">
-                                        <p class="text-2xl font-bold">الشهر الثالث (مقترح): <span class="text-green-400">5000 ريال</span></p>
-                                        <p class="text-lg text-gray-400">🎯 الهدف: تثبيت البراند + عروض موسمية + رسائل مضاعفة</p>
+                                        <p class="text-2xl font-bold">الشهر الثالث (مقترح): <span class="text-green-400">10000 ريال</span></p>
+                                        <p class="text-lg text-gray-400">🎯 الهدف: إغلاق صفقات + توسع + بروف Social قوي</p>
                                     </div>
                                     <div class="grid md:grid-cols-3 gap-6 text-center">
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">Meta Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">2000 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 40%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">2500 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 25%"></div></div>
                                             <p class="text-gray-400 text-sm">حملات مكثفة للعروض</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">TikTok Ads</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">2000 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 40%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">6000 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 60%"></div></div>
                                             <p class="text-gray-400 text-sm">الانتشار الواسع للعلامة التجارية</p>
                                         </div>
-                                        <div class="bg-gray-800 p-6 rounded-xl">
+                                        <div class="bg-gray-900/70 p-6 rounded-xl">
                                             <h4 class="text-xl font-bold">Remarketing</h4>
-                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1000 <span class="text-sm text-gray-400">ريال</span></p>
-                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 20%"></div></div>
+                                            <p class="text-2xl font-bold text-[#c09a5b] my-2">1500 <span class="text-sm text-gray-400">ريال</span></p>
+                                            <div class="w-full bg-gray-700 rounded-full h-4 my-2"><div class="bg-[#c09a5b] h-4 rounded-full" style="width: 15%"></div></div>
                                             <p class="text-gray-400 text-sm">حملات قوية للجمهور المهتم</p>
                                         </div>
                                     </div>
-                                    <div class="mt-8 bg-gray-800/50 p-4 rounded-md text-center"><strong class="text-[#c09a5b]">تكثيف الأنشطة:</strong> محتوى "قبل/بعد"، آراء عملاء، عروض حصرية، حملات موسمية (عرض الصيف مثلاً).</div>
                                 </div>
                             </div>
                            </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -647,8 +637,8 @@
                     </div>
                     <div class="mt-12">
                         <p class="text-lg text-gray-200">شكراً لوقتكم، ونتطلع لبدء هذه الشراكة الناجحة.</p>
-                        <p class="text-2xl font-bold mt-2"> Harisl LTD</p>
-                       <!-- <p class="text-gray-400">[رقم الهاتف]</p>
+                        <p class="text-2xl font-bold mt-2">حسن الشافعي</p>
+                        <!--<p class="text-gray-400">[رقم الهاتف]</p>
                         <p class="text-gray-400">[البريد الإلكتروني]</p> -->
                     </div>
                 </div>
@@ -731,7 +721,9 @@
                         const tabId = button.dataset[dataAttribute];
                         
                         // Deactivate all panes associated with this tab set
-                        document.querySelectorAll(paneSelector).forEach(pane => pane.classList.remove('active'));
+                        document.querySelectorAll(paneSelector).forEach(pane => {
+                            pane.classList.remove('active')
+                        });
                         
                         // Activate the correct pane
                         const correspondingPane = document.getElementById(`${tabId}-pane`);
@@ -748,20 +740,6 @@
             setupTabs('platforms-tabs', '.sub-tab-pane', 'subtab');
             setupTabs('budget-tabs', '.budget-tab-pane', 'budgetTab');
             setupTabs('timeline-tabs', '.timeline-tab-pane', 'timelineTab');
-
-            // Correctly select budget panes for budget tabs
-             const budgetTabsContainer = document.getElementById('budget-tabs');
-             if(budgetTabsContainer){
-                budgetTabsContainer.addEventListener('click', (e) => {
-                    const button = e.target.closest('button');
-                     if (button && button.dataset.budgetTab) {
-                        const tabId = button.dataset.budgetTab;
-                        document.querySelectorAll('.budget-tab-pane').forEach(pane => pane.classList.remove('active'));
-                        const pane = document.getElementById(`${tabId}-pane`);
-                        if(pane) pane.classList.add('active');
-                     }
-                });
-             }
         });
 
     </script>
